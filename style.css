@@ -47,7 +47,7 @@ button {
 }
 
 .detailsContainer {
-    display: flex; 
+    display: flex;
     justify-content: space-around;
     gap: 1rem;
 }
@@ -66,6 +66,3 @@ img {
     justify-content: space-around;
     gap: 1.2rem;
 }
-
-
-

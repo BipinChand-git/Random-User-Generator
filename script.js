@@ -9,8 +9,9 @@ function fetchUser() {
 
     fetch('https://randomuser.me/api/')
     .then((response) => response.json())
-    .then((data) => displayUser(data.results[0]))
-    .catch((error) => console.log(error));
+    .then((data) => {
+        displayUser(data.results[0])
+    })
 }
 
 // creating header h1 and button----
@@ -22,9 +23,11 @@ function createHeader() {
 
     // button---
     const button = document.createElement('button');
-    button.setAttribute('type', 'button');
-    button.setAttribute('id', 'generate');
-    button.textContent = 'Generate User';
+    const text = document.createTextNode('Generate User');
+    button.type = 'button';
+    button.id = 'generate';
+
+    button.appendChild(text);
 
     div.appendChild(h1);
     div.appendChild(button);
