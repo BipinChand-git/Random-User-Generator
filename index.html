@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random User Generator</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <!-- Hard-coded details -->
+        <div class="container">
+            <div>
+                <h1>Random User Generator</h1>
+                <button type="button" id="generate">
+                    <div id="spinner hidden"></div> 
+                    Generate User
+                </button>
+            </div>
+            <div class="detailsContainer">
+                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Image is Loading">
+                <div class="details">
+                    <p><span>Name: </span>Sara Wilson</p>
+                    <p><span>Age: </span>40</p>
+                    <p><span>Email: </span>sarawilson@gmail.com</p>
+                    <p><span>Phone: </span>(555) 565-5555</p>
+                    <p><span>Location: </span>New Delhi</p>
+                </div>
+            </div>
+        </div>
+        <!-- Data will be displayed in this user div -->
+        <div id="user" class="newContainer"></div>
+        </main>
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
